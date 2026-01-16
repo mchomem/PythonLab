@@ -16,20 +16,20 @@ class Menu:
             print(f'{Fore.CYAN}|--------------------------------|\n')
 
             print('*** Menu ***\n')
-            print('1. Print function demonstration.')
-            print('2. Types and variables demonstration.')
-            print('3. Arithmetic operations demonstration.')
-            print('4. String (text) manipulation demonstration.')
-            print('5. Lists demonstration.')
-            print('6. Conditional statements demonstration.')
-            print('7. Loops demonstration.')
-            print('8. Try/except/else/finally demonstration.')
-            print('9. I/O - Write a text file on D: disk demonstration. (only Windows)')
-            print('10. I/O - Read a text file from D: disk demonstration. (only Windows)')
-            print('11. Read a Excel file demonstration. (only Windows)')
-            print('0. Exit.')
+            print('1.'.rjust(3,' '), 'Print function demonstration.')
+            print('2.'.rjust(3,' '), 'Types and variables demonstration.')
+            print('3.'.rjust(3,' '), 'Arithmetic operations demonstration.')
+            print('4.'.rjust(3,' '), 'String (text) manipulation demonstration.')
+            print('5.'.rjust(3,' '), 'Lists demonstration.')
+            print('6.'.rjust(3,' '), 'Conditional statements demonstration.')
+            print('7.'.rjust(3,' '), 'Loops demonstration.')
+            print('8.'.rjust(3,' '), 'Try/except/else/finally demonstration.')
+            print('9.'.rjust(3,' '), 'I/O - Write a text file on D: disk demonstration. (only Windows)')
+            print('10.'.rjust(3,' '), 'I/O - Read a text file from D: disk demonstration. (only Windows)')
+            print('11.'.rjust(3,' '), 'Read a Excel file demonstration. (only Windows)')
+            print('0.'.rjust(3,' '), 'Exit.')
 
-            option = input(f'\n{Fore.YELLOW}Select an option: {Fore.RESET}')
+            option = input(f'\n{Fore.CYAN}Select an option: {Fore.RESET}')
 
             if option == "1":
                 LabService.run_print_demo()
@@ -57,7 +57,7 @@ class Menu:
                 Menu.exit();
             else:
                 ConsoleHelper.clear()
-                print('Invalid option. Please try again.')
+                print(f'{Fore.YELLOW}Invalid option. Please try again.\n')
                 input('Press Enter to continue...')
 
     @staticmethod

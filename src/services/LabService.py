@@ -318,7 +318,7 @@ class LabService:
             
             # Iterate over rows
             for i, row in df.iterrows():
-                line = f'{str(i + 1).ljust(col_width)}'
+                line = f'{Fore.CYAN}{str(i + 1).ljust(col_width)}{Fore.RESET}'
                 
                 # Iterate over all columns and concatenate side by side
                 for col in df.columns:
