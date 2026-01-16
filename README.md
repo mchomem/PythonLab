@@ -10,4 +10,9 @@ Intial menu
 ![Main menu](/docs/images/main-menu.png)
 
 Excel reader
+
 ![Excel Reader](/docs/images/excel-reader.png)
+
+Arithmetic Operations
+
+![Excel Reader](/docs/images/arithmetic-operations.png)
