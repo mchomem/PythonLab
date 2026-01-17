@@ -252,18 +252,19 @@ class LabService:
         
         print(f'{Fore.CYAN}9. I/O - Write a text file on D: disk demonstration. (only Windows)\n')
 
-        path = 'D:\\Temp\\file_handled_python.txt'
+        base_path = Path(__file__).resolve()
+        text_file_path = base_path.parents[2] / "data" / "sample_text_file.txt"
 
         print('Enter the text to write to the file (end with Ctrl+Z on a new line and press Enter):\n')
         user_text = sys.stdin.read() # Users can input multiple lines, ending with Ctrl+Z (Windows) or Ctrl+D (Unix)
 
         try:
-            with open(path, 'w', encoding='utf-8') as file:
+            with open(text_file_path, 'w', encoding='utf-8') as file:
                 file.write(user_text)
 
-            print(f'File written successfully to {path}, and opening the folder with Windows Explorer...')
+            print(f'File written successfully to {text_file_path}, and opening the folder with Windows Explorer...')
 
-            subprocess.run(['explorer', '/select,', path])
+            subprocess.run(['explorer', '/select,', str(text_file_path)])
         except Exception as e:
             print(Fore.RED + 'An error occurred while writing the file:' + Style.RESET_ALL, e)
 
@@ -275,10 +276,11 @@ class LabService:
         
         print(f'{Fore.CYAN}10. I/O - Read a text file from D: disk demonstration. (only Windows)\n')
 
-        path = 'D:\\Temp\\file_handled_python.txt'
+        base_path = Path(__file__).resolve()
+        text_file_path = base_path.parents[2] / "data" / "sample_text_file.txt"
 
         try:
-            with open(path, 'r', encoding='utf-8') as file:
+            with open(text_file_path, 'r', encoding='utf-8') as file:
                 content = file.read()
                 print('File Content:\n')
                 print(content)
