@@ -1,10 +1,10 @@
-from Menu import Menu
+from Menu import Menu      # Import Menu class
 
-class Main:
+class Main:                # Class definition
     
-    @staticmethod
-    def run():        
+    @staticmethod          # Static method decorator
+    def run():             # Method definition
         Menu.show()
 
-if __name__ == '__main__':
+if __name__ == '__main__': # Entry point check
     Main.run()

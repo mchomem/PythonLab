@@ -43,19 +43,18 @@ class LabService:
         print(f'{Fore.CYAN}3. Arithmetic operations demonstration.\n')
 
         spacing = 20
-
         a = 10
         b = 3
 
-        print('Operation'.ljust(spacing, ' ')        ,'Expression'.ljust(spacing, ' ')            , 'Result'.ljust(spacing, ' '))
+        print('Operation'.ljust(spacing, ' ')        , 'Expression'.ljust(spacing, ' ')            , 'Result'.ljust(spacing, ' '))
         print(''.ljust(60, '='))
-        print('Addition'.ljust(spacing, ' ')         ,'a + b = '.ljust(spacing, ' ')              , a + b)
-        print('Subtraction'.ljust(spacing, ' ')      ,'a - b = '.ljust(spacing, ' ')              , a - b)
-        print('Multiplication'.ljust(spacing, ' ')   ,'a * b = '.ljust(spacing, ' ')              , a * b)
-        print('Division'.ljust(spacing, ' ')         ,'a / b = '.ljust(spacing, ' ')              , a / b)
-        print('Integer Division'.ljust(spacing, ' ') ,'a // b = '.ljust(spacing, ' ')             , a // b)
-        print('Modulus'.ljust(spacing, ' ')          ,'a % b = '.ljust(spacing, ' ')              , a % b)
-        print('Exponentiation'.ljust(spacing, ' ')   ,'a ** b = '.ljust(spacing, ' ')             , a ** b)
+        print('Addition'.ljust(spacing, ' ')         , 'a + b = '.ljust(spacing, ' ')              , a + b)
+        print('Subtraction'.ljust(spacing, ' ')      , 'a - b = '.ljust(spacing, ' ')              , a - b)
+        print('Multiplication'.ljust(spacing, ' ')   , 'a * b = '.ljust(spacing, ' ')              , a * b)
+        print('Division'.ljust(spacing, ' ')         , 'a / b = '.ljust(spacing, ' ')              , a / b)
+        print('Integer Division'.ljust(spacing, ' ') , 'a // b = '.ljust(spacing, ' ')             , a // b)
+        print('Modulus'.ljust(spacing, ' ')          , 'a % b = '.ljust(spacing, ' ')              , a % b)
+        print('Exponentiation'.ljust(spacing, ' ')   , 'a ** b = '.ljust(spacing, ' ')             , a ** b)
         print('Expression'.ljust(spacing, ' ')       , '(a + b) * (a - b) = '.ljust(spacing, ' ') , (a + b) * (a - b))
         print(''.ljust(60, '-'))
 
