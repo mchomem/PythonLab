@@ -24,8 +24,8 @@ class Menu:
             print(Fore.YELLOW + '6.'.rjust(3,' ') + Fore.RESET, 'Conditional statements demonstration.')
             print(Fore.YELLOW + '7.'.rjust(3,' ') + Fore.RESET, 'Loops demonstration.')
             print(Fore.YELLOW + '8.'.rjust(3,' ') + Fore.RESET, 'Try/except/else/finally demonstration.')
-            print(Fore.YELLOW + '9.'.rjust(3,' ') + Fore.RESET, 'I/O - Write a text file on D: disk demonstration. (only Windows)')
-            print(Fore.YELLOW + '10.'.rjust(3,' ') + Fore.RESET, 'I/O - Read a text file from D: disk demonstration. (only Windows)')
+            print(Fore.YELLOW + '9.'.rjust(3,' ') + Fore.RESET, 'I/O - Write a text file on disk demonstration. (only Windows)')
+            print(Fore.YELLOW + '10.'.rjust(3,' ') + Fore.RESET, 'I/O - Read a text file from disk demonstration. (only Windows)')
             print(Fore.YELLOW + '11.'.rjust(3,' ') + Fore.RESET, 'Read a Excel file demonstration. (only Windows)')
             print(Fore.YELLOW + '0.'.rjust(3,' ') + Fore.RESET, 'Exit.')
 
