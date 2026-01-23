@@ -16,17 +16,7 @@ class Menu:
             print(f'{Fore.CYAN}|--------------------------------|\n')
 
             print('*** Menu ***\n')
-            print(Fore.YELLOW + '1.'.rjust(3,' ') + Fore.RESET, 'Print function demonstration.')
-            print(Fore.YELLOW + '2.'.rjust(3,' ') + Fore.RESET, 'Types and variables demonstration.')
-            print(Fore.YELLOW + '3.'.rjust(3,' ') + Fore.RESET, 'Arithmetic operations demonstration.')
-            print(Fore.YELLOW + '4.'.rjust(3,' ') + Fore.RESET, 'String (text) manipulation demonstration.')
-            print(Fore.YELLOW + '5.'.rjust(3,' ') + Fore.RESET, 'Lists demonstration.')
-            print(Fore.YELLOW + '6.'.rjust(3,' ') + Fore.RESET, 'Conditional statements demonstration.')
-            print(Fore.YELLOW + '7.'.rjust(3,' ') + Fore.RESET, 'Loops demonstration.')
-            print(Fore.YELLOW + '8.'.rjust(3,' ') + Fore.RESET, 'Try/except/else/finally demonstration.')
-            print(Fore.YELLOW + '9.'.rjust(3,' ') + Fore.RESET, 'I/O - Write a text file on disk demonstration. (only Windows)')
-            print(Fore.YELLOW + '10.'.rjust(3,' ') + Fore.RESET, 'I/O - Read a text file from disk demonstration. (only Windows)')
-            print(Fore.YELLOW + '11.'.rjust(3,' ') + Fore.RESET, 'Read a Excel file demonstration. (only Windows)')
+            Menu.mount_menu()
             print(Fore.YELLOW + '0.'.rjust(3,' ') + Fore.RESET, 'Exit.')
 
             option = input(f'\n{Fore.CYAN}Select an option: {Fore.RESET}')
@@ -59,6 +49,25 @@ class Menu:
                 ConsoleHelper.clear()
                 print(f'{Fore.YELLOW}Invalid option. Please try again.\n')
                 input('Press Enter to continue...')
+
+    @staticmethod
+    def mount_menu():
+        menu_options = [
+            'Print function demonstration.'
+            , 'Types and variables demonstration.'
+            , 'Arithmetic operations demonstration.'
+            , 'String (text) manipulation demonstration.'
+            , 'Lists demonstration.'
+            , 'Conditional statements demonstration.'
+            , 'Loops demonstration.'
+            , 'Try/except/else/finally demonstration.'
+            , 'I/O - Write a text file on disk demonstration. (only Windows)'
+            , 'I/O - Read a text file from disk demonstration. (only Windows)'
+            , 'Read a Excel file demonstration. (only Windows)'
+        ];
+    
+        for i in range(len(menu_options)):
+            print(Fore.YELLOW + f'{i + 1}.'.rjust(3,' ') + Fore.RESET, menu_options[i])
 
     @staticmethod
     def exit():
